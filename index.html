@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.H.S.Phanendra - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">B.H.S.Phanendra</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content fade-in">
+            <div class="profile-img-container">
+                <img src="https://lh3.googleusercontent.com/d/1GfQHwC-2Fv7kl3M5s8zUcmB3h7QcDXZP" alt="Hemanth Profile" class="profile-img" id="profileImg">
+            </div>
+            <h1>Bokka Hemanth Satya Phanendra</h1>
+            <h2>MCA Graduate & Python Developer</h2>
+            <p>Passionate about programming and technology with a solid foundation in Python development. Eager to apply my skills in a professional environment and contribute to meaningful projects while continuously learning and growing as a software professional.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    View My Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="about-grid">
+            <div class="card-base about-card fade-in">
+                <h3><i class="fas fa-user-graduate"></i>Who I Am</h3>
+                <p>I'm a dedicated MCA graduate with a solid foundation in programming and a particular interest in Python development. My journey in technology has been driven by curiosity and a commitment to continuous learning and innovation in the field of software development.</p>
+            </div>
+            <div class="card-base about-card fade-in">
+                <h3><i class="fas fa-code"></i>What I Love</h3>
+                <p>I'm passionate about exploring programming languages, machine learning algorithms, and web development technologies. I enjoy cycling, playing chess, surfing the web, and listening to music when I'm not coding. These activities help me maintain a balanced lifestyle and fresh perspective on problem-solving.</p>
+            </div>
+            <div class="card-base about-card fade-in">
+                <h3><i class="fas fa-target"></i>My Goals</h3>
+                <p>Seeking a challenging role where I can contribute to meaningful projects, gain hands-on experience, and grow as a software professional. I aim to leverage my skills in Python development and apply them in real-world scenarios to create impactful solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title fade-in">Education Journey</h2>
+        <div class="education-wrapper fade-in">
+            <button class="edu-arrow edu-prev" aria-label="Previous education">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="edu-carousel" id="eduCarousel" tabindex="0" role="region" aria-label="Education carousel">
+                <article class="card-base edu-card">
+                    <div class="edu-card-body">
+                        <h3>Master of Computer Application (MCA)</h3>
+                        <div class="institution">Adikavi Nannaya University</div>
+                        <span class="date">October 2023 - June 2025</span>
+                        <div class="grade">GPA: 8.00/10.00</div>
+                        <p>Comprehensive study of advanced computer science concepts, software development, and project-based learning in Rajamahendravaram, India.</p>
+                    </div>
+                </article>
+                <article class="card-base edu-card">
+                    <div class="edu-card-body">
+                        <h3>Bachelor's Degree</h3>
+                        <div class="institution">Aditya Degree College, Adikavi Nannaya University</div>
+                        <span class="date">June 2020 - July 2023</span>
+                        <div class="grade">Grade: 8.37/10.00</div>
+                        <p>Strong foundation in computer science fundamentals with excellent academic performance in Tadepalligudem, India.</p>
+                    </div>
+                </article>
+                <article class="card-base edu-card">
+                    <div class="edu-card-body">
+                        <h3>Pre-University Education (Intermediate)</h3>
+                        <div class="institution">Pragati Junior College</div>
+                        <span class="date">June 2018 - March 2020</span>
+                        <div class="grade">Grade: 7.38/10.00</div>
+                        <p>Completed intermediate education with focus on mathematics and sciences, building foundations for computer science studies.</p>
+                    </div>
+                </article>
+                <article class="card-base edu-card">
+                    <div class="edu-card-body">
+                        <h3>Secondary Education (10th Grade)</h3>
+                        <div class="institution">Z.P. Boys High School</div>
+                        <span class="date">Completed March 2018</span>
+                        <div class="grade">GPA: 9.5/10</div>
+                        <p>Excellent academic performance in core subjects in Mummidivaram, India.</p>
+                    </div>
+                </article>
+            </div>
+            <button class="edu-arrow edu-next" aria-label="Next education">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title fade-in">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="card-base skill-category fade-in">
+                <h3>Programming Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        C
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        Python
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-java"></i>
+                        Java
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        SQL
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-base skill-category fade-in">
+                <h3>Web Technologies</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        HTML
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        CSS
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js-square"></i>
+                        JavaScript
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-base skill-category fade-in">
+                <h3>Database & Tools</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        MySQL
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        VS Code
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-book"></i>
+                        Jupyter Notebook
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-file-excel"></i>
+                        MS Office
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-server"></i>
+                        XAMPP Server
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-base skill-category fade-in">
+                <h3>Languages & Interests</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fas fa-language"></i>
+                        Telugu (Advanced)
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-globe"></i>
+                        English (Advanced)
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-bicycle"></i>
+                        Cycling
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-chess"></i>
+                        Playing Chess
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-music"></i>
+                        Listening Music
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card-compact fade-in" data-project="books-platform" tabindex="0">
+                <div class="project-compact-view">
+                    <h3>Online Books Reselling Platform</h3>
+                    <div class="project-tech-compact">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="expand-indicator">
+                        <i class="fas fa-chevron-down"></i>
+                        <span>Click to view details</span>
+                    </div>
+                </div>
+                
+                <div class="project-expanded-view">
+                    <div class="project-header">
+                        <h3>Online Books Reselling and Exchanging Platform</h3>
+                        <p style="margin-top: 1rem; opacity: 0.9; font-size: 0.9rem;">February 2025 - April 2025</p>
+                        <button class="close-btn" aria-label="Close details">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            Developed a comprehensive full-stack web application to facilitate buying, reselling, donating, and exchanging of books among users. The platform features user authentication, role-based access control, and a responsive user interface with enhanced interactivity.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <ul style="color: var(--text-light); margin-bottom: 2rem; line-height: 1.8;">
+                            <li>Implemented user authentication and role-based access (Admin, User, Seller)</li>
+                            <li>Built dynamic pages for book listing, searching, reviewing, and cart management</li>
+                            <li>Ensured responsive and attractive UI with custom CSS and JavaScript</li>
+                            <li>Integrated email verification system for secure user registration</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/bhsphanendra/Online-Books-Reselling-and-Exchanging-Platform" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-compact fade-in" data-project="ml-insurance" tabindex="0">
+                <div class="project-compact-view">
+                    <h3>Medical Insurance Cost Prediction</h3>
+                    <div class="project-tech-compact">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Random Forest</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                    </div>
+                    <div class="expand-indicator">
+                        <i class="fas fa-chevron-down"></i>
+                        <span>Click to view details</span>
+                    </div>
+                </div>
+                
+                <div class="project-expanded-view">
+                    <div class="project-header">
+                        <h3>Medical Insurance Cost Prediction Using ML</h3>
+                        <p style="margin-top: 1rem; opacity: 0.9; font-size: 0.9rem;">October 2024 - December 2024</p>
+                        <button class="close-btn" aria-label="Close details">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            Developed a predictive model using Random Forest Regressor to accurately predict medical insurance costs. The project involved comprehensive data preprocessing, feature engineering, and model evaluation to achieve optimal prediction accuracy.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Random Forest</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Jupyter Notebook</span>
+                            <span class="tech-tag">Pandas</span>
+                        </div>
+                        <ul style="color: var(--text-light); margin-bottom: 2rem; line-height: 1.8;">
+                            <li>Implemented feature engineering and preprocessing techniques on real-world dataset</li>
+                            <li>Evaluated model performance using MAE, MSE metrics</li>
+                            <li>Compared multiple algorithms: Linear Regression, Gradient Boosting, Ada Boosting</li>
+                            <li>Identified Random Forest as optimal model for insurance cost prediction</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card-compact fade-in" data-project="digital-portfolio" tabindex="0">
+                <div class="project-compact-view">
+                    <h3>Digital Portfolio Website</h3>
+                    <div class="project-tech-compact">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="expand-indicator">
+                        <i class="fas fa-chevron-down"></i>
+                        <span>Click to view details</span>
+                    </div>
+                </div>
+                <div class="project-expanded-view"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <h2 class="section-title fade-in">Certifications</h2>
+        <div class="certifications-grid">
+            <div class="card-base certification-card fade-in">
+                <i class="fab fa-python cert-icon"></i>
+                <h3>Python Course</h3>
+                <div class="cert-provider">Python Training Program</div>
+                <div class="cert-date">June 2025</div>
+            </div>
+            
+            <div class="card-base certification-card fade-in">
+                <i class="fas fa-code cert-icon"></i>
+                <h3>Python Programming</h3>
+                <div class="cert-provider">NIT Calicut</div>
+                <div class="cert-date">July 2024</div>
+            </div>
+            
+            <div class="card-base certification-card fade-in">
+                <i class="fas fa-robot cert-icon"></i>
+                <h3>AI and Machine Learning</h3>
+                <div class="cert-provider">APSSDC (Andhra Pradesh State Skill Development Corporation)</div>
+                <div class="cert-date">June 2024</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2 class="section-title fade-in" style="color: white;">Let's Connect</h2>
+            <p class="fade-in" style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 3rem;">
+                I'm always excited to connect with fellow developers, potential employers, and anyone interested in technology. Let's discuss opportunities and create something amazing together!
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required minlength="2">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="What's this about?" required minlength="5">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Tell me about your project or opportunity..." required minlength="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <a href="mailto:phanendrabhs@gmail.com">phanendrabhs@gmail.com</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <a href="tel:+917386621230">+91 7386621230</a> | <a href="tel:+916301666138">+91 6301666138</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>
+                          <a href="https://www.google.com/maps/search/?api=1&query=Nallajerla,+Andhra+Pradesh,+India+534112" target="_blank" style="color: inherit; text-decoration: underline;">
+                            Nallajerla, Andhra Pradesh, India<br>534112
+                          </a>
+                        </p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/hemanth-satya-phanendra/" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/bhsphanendra" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/phanendrabhs" class="social-link" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/aytas_7029/?next=%2F" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear">2025</span> Bokka Hemanth Satya Phanendra. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
