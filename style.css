@@ -130,7 +130,7 @@ html {
 }
 
 .hero h1 {
-    font-size: 3.8rem;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
     background: linear-gradient(45deg, #ff6b6b, #feca57, #48cae4, #ff9ff3, #a8e6cf);
     background-size: 400% 400%;
@@ -1485,3 +1485,4 @@ textarea.form-control {
         margin-bottom: 2rem;
     }
 }
+
